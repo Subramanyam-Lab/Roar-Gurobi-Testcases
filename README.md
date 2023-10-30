@@ -60,13 +60,13 @@ First set up the Julia environment for the knapsack problem:
 3. Activate the environment:
 
     ```julia
-    (v1.x) pkg> activate .
+    (@v1.x) pkg> activate .
     ```
 
 4. Instantiate the environment to install dependencies that are needed to run:
 
     ```julia
-    (new_environment) pkg> instantiate
+    (environment) pkg> instantiate
     ```
 
 5. Exit the package manager and run the Julia script by:
