@@ -2,7 +2,7 @@
 
 # simple knapsack examples
 
-This repository provides three separate examples for a simple knapsack problem using Gurobi. There are three different approach: a Bash script, the Gurobi Python API, and the Julia/JuMP API.
+This repository provides three separate examples for a simple knapsack problem using Gurobi. There are three different approach: a Bash script, the Gurobi Python API, and the Julia/JuMP API
 
 ## Prerequisites
 
@@ -11,12 +11,11 @@ This repository provides three separate examples for a simple knapsack problem u
 - Julia installed (for the Julia/JuMP API example)
 
 ## Bash Script Example
-
-The Bash script does not require any additional dependencies aside from Gurobi.
+The Bash script does not require any additional dependencies aside from Gurobi
 
 To run the script:
 
-1. Navigate to the directory containing `run_gurobi.sh`.
+1. Navigate to the directory containing `run_gurobi.sh`
 2. Make it executable if it is not already:
 
     ```bash
@@ -28,11 +27,11 @@ To run the script:
     ./run_gurobi.sh
     ```
 
-This will solve the knapsack problem in the file `knapsack.lp` file using Gurobi.
+This will solve the knapsack problem in the file `knapsack.lp` file using Gurobi
 
 ## Python API Example
 
-The Python example requires specific Python packages.
+The Python example requires some Python packages
 
 To set up and run the Python example:
 
@@ -48,7 +47,7 @@ To set up and run the Python example:
     python knapsack_gurobi.py
     ```
 
-This Python script will solve the knapsack problem using the Gurobi Python API.
+This Python script will solve the knapsack problem using the Gurobi Python API
 
 ## Julia/JuMP API Example
 
@@ -78,7 +77,7 @@ To prepare and use the Julia environment for the knapsack problem:
     include("knapsack_gurobi.jl")
     ```
 
-This will solve the knapsack problem using the JuMP package in Julia with Gurobi as the optimizer.
+This will solve the knapsack problem using the JuMP package in Julia with Gurobi as the optimizer
 
 ## Questions
 
