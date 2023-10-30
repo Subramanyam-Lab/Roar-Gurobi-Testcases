@@ -1,4 +1,4 @@
-# Gurobi_testcases
+# gurobi_testcases
 
 # simple knapsack examples
 
