@@ -51,7 +51,7 @@ This Python script will solve the knapsack problem using the Gurobi Python API
 
 ## Julia/JuMP API Example
 
-To prepare and use the Julia environment for the knapsack problem:
+First set up the Julia environment for the knapsack problem:
 
 1. Start Julia and enter the package manager:
 
@@ -65,19 +65,19 @@ To prepare and use the Julia environment for the knapsack problem:
     (v1.x) pkg> activate ./new_environment
     ```
 
-3. Instantiate the environment to install dependencies:
+3. Instantiate the environment to install dependencies that are needed to run:
 
     ```julia
     (new_environment) pkg> instantiate
     ```
 
-4. Exit the package manager and run the Julia script:
+4. Exit the package manager and run the Julia script by:
 
     ```julia
     include("knapsack_gurobi.jl")
     ```
 
-This will solve the knapsack problem using the JuMP package in Julia with Gurobi as the optimizer
+This will solve the knapsack problem using the JuMP package in Julia with Gurobi as the solver
 
 ## Questions
 
