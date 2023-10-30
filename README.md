@@ -1,6 +1,6 @@
 # Gurobi_testcases
 
-# Simple knapsack examples
+# simple knapsack examples
 
 This repository provides three separate examples for a simple knapsack problem using Gurobi. There are three different approach: a Bash script, the Gurobi Python API, and the Julia/JuMP API.
 
