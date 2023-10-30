@@ -9,7 +9,7 @@ This repository has three separate examples for a simple knapsack problem for te
 - Julia installed (for the Julia/JuMP API example)
 
 ## Bash Script Example
-The Bash script does not require any additional dependencies aside from Gurobi
+The Bash script does not require any additional dependencies other than Gurobi
 
 To run the script:
 
@@ -72,9 +72,6 @@ First set up the Julia environment for the knapsack problem:
     ```julia
     include("knapsack_gurobi.jl")
     ```
-
-This will solve the knapsack problem using the JuMP package in Julia with Gurobi as the solver
-
 ## Questions
 
 For any questions please open an issue in the repository
