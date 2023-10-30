@@ -1,4 +1,4 @@
-# Testing Gurobi installation on Roar
+# Testing Gurobi installation
 
 This repository has three separate examples for testing Gurobi installation. Each solves the same knapsack problem but using different APIs: the first directly calls the Gurobi executable via bash, the second uses the Gurobi Python API, and the third uses the Julia/JuMP API.
 
