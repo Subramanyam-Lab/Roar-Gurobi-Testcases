@@ -1,8 +1,8 @@
-# gurobi_testcases
+# Gurobi_testcases
 
 # Gurobi Knapsack Problem Examples
 
-This repository provides three separate examples of solving a simple knapsack problem using Gurobi. Each example uses a different approach: a Bash script, the Gurobi Python API, and the Julia/JuMP API.
+This repository provides three separate examples for a simple knapsack problem using Gurobi. There are three different approach: a Bash script, the Gurobi Python API, and the Julia/JuMP API.
 
 ## Prerequisites
 
@@ -17,12 +17,12 @@ The Bash script does not require any additional dependencies aside from Gurobi.
 To run the script:
 
 1. Navigate to the directory containing `run_gurobi.sh`.
-2. Ensure the script is executable:
+2. Make it executable if it is not already:
 
     ```bash
     chmod +x run_gurobi.sh
     ```
-3. Execute the script:
+3. Execute using:
 
     ```bash
     ./run_gurobi.sh
