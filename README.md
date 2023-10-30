@@ -1,10 +1,10 @@
 # simple knapsack examples
 
-This repository provides three separate examples for a simple knapsack problem using Gurobi. There are three different approach: a Bash script, the Gurobi Python API, and the Julia/JuMP API
+This repository has three separate examples for a simple knapsack problem using Gurobi. There are three different approach: a Bash script, the Gurobi Python API, and the Julia/JuMP API all three solve the same problem
 
 ## Prerequisites
 
-- Gurobi Optimizer installed and licensed
+- Gurobi solver installed and licensed
 - Python installed (for the Python API example)
 - Julia installed (for the Julia/JuMP API example)
 
@@ -29,9 +29,9 @@ This will solve the knapsack problem in the file `knapsack.lp` file using Gurobi
 
 ## Python API Example
 
-The Python example requires some Python packages
+The Python example requires some packages
 
-To set up and run the Python example:
+To set up:
 
 1. Install the required Python packages using:
 
@@ -44,8 +44,6 @@ To set up and run the Python example:
     ```bash
     python knapsack_gurobi.py
     ```
-
-This Python script will solve the knapsack problem using the Gurobi Python API
 
 ## Julia/JuMP API Example
 
@@ -60,7 +58,7 @@ First set up the Julia environment for the knapsack problem:
 2. Activate the environment:
 
     ```julia
-    (v1.x) pkg> activate ./new_environment
+    (v1.x) pkg> activate .
     ```
 
 3. Instantiate the environment to install dependencies that are needed to run:
