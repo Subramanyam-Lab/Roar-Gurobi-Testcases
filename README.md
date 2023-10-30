@@ -28,7 +28,7 @@ To run the script:
     ./run_gurobi.sh
     ```
 
-This will solve the knapsack problem defined in the `knapsack.lp` file using Gurobi.
+This will solve the knapsack problem in the file `knapsack.lp` file using Gurobi.
 
 ## Python API Example
 
