@@ -1,6 +1,6 @@
-# simple knapsack examples
+# Testing Gurobi installation on Roar
 
-This repository has three separate examples for a simple knapsack problem for testing Gurobi. There are three different approach: a Bash script, the Gurobi Python API, and the Julia/JuMP API all three solve the same problem
+This repository has three separate examples for testing Gurobi installation. Each solves the same knapsack problem but using different APIs: the first directly calls the Gurobi executable via bash, the second uses the Gurobi Python API, and the third uses the Julia/JuMP API.
 
 ## Prerequisites
 
@@ -9,12 +9,12 @@ This repository has three separate examples for a simple knapsack problem for te
 - Julia installed (for the Julia/JuMP API example)
 
 ## Bash Script Example
-The Bash script does not require any additional dependencies other than Gurobi
+The Bash script does not require any additional dependencies aside from Gurobi
 
 To run the script:
 
-1. Navigate to the directory containing `run_gurobi.sh`
-2. Make it executable if it is not already:
+1. Navigate to the directory `bash_script_example`
+2. Make the script executable if it is not already:
 
     ```bash
     chmod +x run_gurobi.sh
@@ -25,7 +25,7 @@ To run the script:
     ./run_gurobi.sh
     ```
 
-This will solve the knapsack problem in the file `knapsack.lp` file using Gurobi
+This will solve the knapsack problem in the file `knapsack.lp` file by calling Gurobi directly
 
 ## Python API Example
 
@@ -33,13 +33,14 @@ The Python example requires some packages
 
 To set up:
 
-1. Install the required Python packages using:
+1. Navigate to the directory `python_API_example`
+2. Install the required Python packages using:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-2. Run the Python script with:
+3. Run the Python script with:
 
     ```bash
     python knapsack_gurobi.py
@@ -49,29 +50,33 @@ To set up:
 
 First set up the Julia environment for the knapsack problem:
 
-1. Start Julia and enter the package manager:
+1. Navigate to the directory `julia_jump_API_example`
+2. Start Julia and enter the package manager:
 
     ```julia
     ]
     ```
 
-2. Activate the environment:
+3. Activate the environment:
 
     ```julia
     (v1.x) pkg> activate .
     ```
 
-3. Instantiate the environment to install dependencies that are needed to run:
+4. Instantiate the environment to install dependencies that are needed to run:
 
     ```julia
     (new_environment) pkg> instantiate
     ```
 
-4. Exit the package manager and run the Julia script by:
+5. Exit the package manager and run the Julia script by:
 
     ```julia
     include("knapsack_gurobi.jl")
     ```
+
+This will solve the knapsack problem using the JuMP package in Julia with Gurobi as the solver
+
 ## Questions
 
 For any questions please open an issue in the repository
